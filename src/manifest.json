@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "masudder",
+  "version": "0.0.0",
+
+  "default_locale": "ja",
+  "description": "__MSG_extensionDescription__",
+  "icons": {"128": "icon128.png"},
+
+  "background": {
+    "scripts": [
+      "background/index.setup.js",
+      "background/index.js"
+    ]
+  },
+
+  "author": "Hinaser",
+  "content_scripts": [{
+    "matches": ["*://anond.hatelabo.jp/"],
+    "js": [
+      "content-script/index.lib.js",
+      "content-script/index.js",
+      "content-script/app/js/runtime-main.js",
+      "content-script/app/js/2.chunk.js",
+      "content-script/app/js/main.chunk.js"
+    ],
+    "css": [
+      "content-script/app/css/main.chunk.css"
+    ],
+    "run_at": "document_idle"
+  }],
+  "homepage_url": "https://github.com/Hinaser/masudder",
+  "incognito": "spanning",
+  "minimum_chrome_version": "47",
+  "offline_enabled": false,
+  "permissions": [
+    "storage",
+    "https://anond.hatelabo.jp/*"
+  ],
+  "short_name": "masudder",
+  "version_name": "0.0.0",
+  "web_accessible_resources": []
+}

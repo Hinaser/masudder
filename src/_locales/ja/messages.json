@@ -1,0 +1,13 @@
+{
+  "extensionName": {
+    "message": "増っ田ー",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "はてな匿名ダイアリーを読みやすくするビューワーアドオンです",
+    "description": "Description of the extension."
+  },
+  "homepageUrl": {
+    "message": "https://github.com/Hinaser/masudder"
+  }
+}
